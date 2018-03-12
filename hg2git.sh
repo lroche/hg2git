@@ -1,6 +1,10 @@
 #!/bin/bash
 
 PROJECT_NAME=$1
+if [ $PROJECT_NAME -eq ""];
+then
+    PROJECT_NAME="project"
+fi
 
 cd /work/result
 mkdir -p $PROJECT_NAME-git
