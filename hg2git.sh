@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PROJECT_NAME=$1
-if [ $PROJECT_NAME -eq ""];
+if [ "$PROJECT_NAME" == "" ]
 then
     PROJECT_NAME="project"
 fi
