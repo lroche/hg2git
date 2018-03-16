@@ -15,6 +15,9 @@ git config core.ignoreCase false
 
 /usr/local/src/fast-export/hg-fast-export.sh -r /work/$PROJECT_NAME
 
-git checkout HEAD
-
-bash
+if [ "$?" -ne "0" ]; then
+  exit 1
+else
+    git checkout HEAD
+    bash
+fi
